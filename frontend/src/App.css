@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap');
+@import url('react-toastify/dist/ReactToastify.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-purple: #877EFF;
+  --primary-dark-purple: #5D5FEF;
+  --orange-color: #FFB620;
+  --white-color: #D0DFFF;
+  --dark-1: #09090A;
+  --dark-2: #101012;
+  --dark-3: #1F1F22;
+  
+}
+
+body {
+  background-color: var(--dark-1);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.logged-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.main-content {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.logged-container {
+  display: grid;
+  max-width: 1500px;
+  height: 100vh;
+  margin: auto;
+  grid-template-columns: 1fr 5fr 1fr;
+}

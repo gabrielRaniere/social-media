@@ -1,0 +1,193 @@
+.prof-container {
+    overflow: auto;
+}
+
+.prof-container::-webkit-scrollbar {
+    width: 1px;
+}
+.prof-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-dark-purple);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.prof-container header{
+    width: 80%;
+    height: 40px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.img-profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.info-profile {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -10px;
+}
+
+.desc-prof {
+    opacity: 0.6;
+    margin-top: 0;
+}
+
+.statistics-prof {
+    display: flex;
+}
+
+.statistics-prof p {
+    margin: 30px 30px 0 0;
+}
+.numbers-profile {
+    color:  var(--primary-purple);
+    margin-right: 4px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.edit-profile {
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid var(--dark-3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.link-edit-profile {
+    text-decoration: none;
+    color: white;
+
+}
+
+.edit-icon {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+.my-posts {
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-top: 200px;
+}
+
+.post-prof:hover, .edit-profile:hover {
+    border: 1px solid var(--primary-purple);
+    transition: all 0.2s;
+}
+
+.my-posts-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+}
+
+.personal-post {
+    margin: 30px;
+    width: 270px;
+    height: 270px;
+    background-color: aqua;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--dark-3);
+    position: relative;
+    box-shadow: inset 0px -10px 50px black;
+    position: relative;
+}
+.post-like {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: aliceblue;
+    font-size: 13px;
+}
+
+@media (max-width:1024px) {
+    .personal-post {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:690px) {
+    .my-posts-container {
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        background-color: aqua;
+        margin-right: 15px;
+    }
+
+    .prof-container header{
+        margin: 50px auto;
+    }
+
+    .desc-prof {
+        font-size: 13px;
+    }
+    .prof-container h1 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:420px) {
+    .my-posts-container {
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        background-color: aqua;
+        margin-right: 15px;
+    }
+
+    .prof-container header{
+        margin: 40px auto;
+    }
+
+    .desc-prof {
+        font-size: 13px;
+    }
+    .prof-container h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .statistics-prof {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .statistics-prof p{
+        font-size: 13px;
+        margin-right: 15px;
+    }
+
+    .my-posts {
+        margin-top: 40px;
+    }
+}

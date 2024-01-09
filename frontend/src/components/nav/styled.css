@@ -1,0 +1,132 @@
+.nav-cont {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--dark-2);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100vh;
+}
+.nav-cont header, .profile {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+.nav-cont h1 {
+    font-size: 28px;
+    margin-left: 4px;
+}
+
+.nav-cont i {
+    font-size: 30px;
+    color: var(--primary-dark-purple);
+}
+
+.profile {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nome-foto-perfil p:nth-child(2) {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.profile img, .foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav-cont a, .log-out {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 15px;
+    transition: all 0.3s;
+    margin: 20px 0;
+}
+
+.icon {
+    transition: all 0.3s;   
+    color: var(--primary-purple);
+    font-size: 30px;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.nav-cont a:hover {
+    background-color: var(--primary-purple);
+}
+.nav-cont a:hover .icon {
+    color: white;
+}
+
+.profile a:hover{
+    background-color: var(--dark-2);
+}
+
+@media (max-width:992px) {
+    .nav-cont header, .profile {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+
+    .nav-cont {
+        padding: 0;
+    }
+    .nav-cont header h1 {
+        font-size: 20px;
+    }
+    .nav-cont .icon {
+        width: 25px;
+    }
+    .navegacion {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .logged-container {
+        grid-template-columns: 0.5fr 6.5fr;
+    }
+    .nav-cont header {
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .nav-cont p {
+        display: none;
+    }
+    .text-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,283 @@
+.post-container {
+    background-color: var(--dark-2);
+    border: 0.5px solid #2c2c2c;
+    width: 90%;
+    height: 560px;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    position: relative;
+}
+
+.likes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    align-items: center;
+}
+
+.like-icon {
+    margin-left: 10px;
+    color: var(--primary-purple);
+    cursor: pointer;
+}
+.like-icon:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+}
+
+.number-likes {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.coments {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    color: var(--primary-purple);
+    
+}
+.quant-coments {
+    position: absolute;
+    color: black;
+    background-color: rgb(241, 103, 103);
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 11px;
+    left: 13px;
+    cursor: pointer;
+}
+
+.img-post {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.post-img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.edit-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    color: var(--primary-purple);
+    margin-bottom: 30px;
+}
+
+.exit-btn {
+    z-index: 100;
+}
+
+.post-container header {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 22px;
+    font-weight: 500;  
+    align-self: self-start;
+    box-sizing: border-box;
+}
+
+.post-container .profile {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.post-container .desc-profile {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.title-post {
+    margin-bottom: 15px;
+}
+
+.foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.post-container .icon {
+    cursor: pointer;
+}
+
+.container-coments {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container-coments::-webkit-scrollbar {
+    width: 3px;
+    background-color: var(--primary-purple);
+}
+
+.message::-webkit-scrollbar {
+    height: 4px;
+    background-color: var(--primary-dark-purple);
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.comentario {
+    background-color: var(--dark-3);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.profile-coment {
+    font-size: 13px;
+    color: var(--primary-purple);
+}
+
+.link-prof {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-coment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message {
+    margin: 4px 0 0 30px;
+    width: 100%;
+    display: block;
+    height: auto;
+    overflow-x: auto;
+}
+
+.exit-btn {
+    color: var(--primary-purple);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.display-block {
+    display: block;
+}
+
+.coment-form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+}
+
+.coment-form input {
+    width: 80%;
+}
+
+.perfil-coment {
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.hastag-profile::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-purple);
+    position: absolute;
+    left: -13px;
+    top: 5px;
+    border-radius: 50%;
+}
+.hastag-profile {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .post-container {
+        border: 0.5px solid #2c2c2c;
+        height: 370px;
+        padding: 10px;
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .title-post {
+        font-size: 16px;
+    }
+
+    .profile {
+        font-size: 15px;
+    }
+    .profile img {
+        width: 35px;
+        height: 35px;
+    }
+    .desc-profile {
+        margin: initial;
+    }
+
+    .profile-coment {
+        font-size: 12px;
+    }
+
+    .message {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 510px) {
+    .desc-profile {
+        display: none;
+    }
+
+    .title-post {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
